@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Meyawo landing page.">
     <meta name="author" content="Devcrud">
-    <title>Meyawo Landing page | Free Bootstrap 4.3.x landing page</title>
+    <title>Convolution Filters on Images with a threaded Web Assemply Apporach Landing page | Free Bootstrap 4.3.x landing page</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
@@ -16,7 +16,7 @@
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#">Meyawo</a>         
+            <a class="logo" href="#">CIFITW</a>         
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -53,12 +53,12 @@
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
-                <span class="up">This is Image Convolution</span>
+                <span style="padding-top: 10vh;" class="up">This is Image Convolution</span>
                 <span class="down"></span>
             </h1>
             <p class="header-subtitle">Processing images live on the web and on your machine</p>            
 
-            <button class="btn btn-primary">Visit My Works</button>
+            <img style="mix-blend-mode: multiply;" src="assets/imgs/conv.gif">
         </div>              
     </header><!-- end of page header -->
 
@@ -69,16 +69,19 @@
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/man.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <img src="assets/imgs/techs.png" class="about-img">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">What is this Project</p>
                     <h2 class="section-title mb-3">About Me</h2>
                     <p>
-                        Javascipt is a slow language, but it is very helpful to build and deploy applications in the web. 
-                        <br>culpa! Quasi quibusdam hic recusandae delectus velit officiis explicabo voluptatibus! Nemo esse similique, voluptates labore distinctio, placeat explicabo facilis molestias, blanditiis culpa iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa sint ex voluptatum expedita aliquid! Debitis, nam!              
+                        CIFITW stands for <span style="font-weight:bold">Convolution Image Filtering In the Web</span>
+                        <br>Javascipt is a slow language, but it is very helpful to build and deploy applications in the web. </br>
+                        <br>While it is typically easy to use a language like C++ to quickly apply a fitler to an image in JS it can be slower</br>
+                        <br>This project leverages <a href="https://emscripten.org/">Emscripten</a> to transpiles a fast convoltional library into JS for use in the browser</br>
+                        <br>There is also a downloadable windows and mac version, leveraging  <a href="https://www.electronjs.org">Electron</a></br>
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                    <a href="https://github.com/larsens-smu/conv.github.io" class="btn-rounded btn btn-outline-primary mt-4">Git Hub</a>
                 </div>              
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -177,12 +180,11 @@
         </div><!-- end of container -->
     </section> <!-- end of portfolio section -->
 
-    <!-- pricing section -->
+    <!-- pricing section 
     <section class="section" id="pricing">
         <div class="container text-center">
             <p class="section-subtitle">How Much I Charge ?</p>
             <h6 class="section-title mb-6">My Pricing</h6>
-            <!-- row -->
             <div class="pricing-wrapper">
                 <div class="pricing-card">
                     <div class="pricing-card-header">
@@ -248,10 +250,9 @@
                     <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
                 </div>
 
-            </div><!-- end of pricing wrapper -->
-        </div> <!-- end of container -->
-    </section><!-- end of pricing section -->
-
+            </div>
+        </div>
+    </section>end of pricing section -->
     <!-- section -->
     <section class="section-sm bg-primary">
         <!-- container -->
@@ -283,8 +284,8 @@
                             <img src="assets/imgs/avatar2.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                           
                         </div>
                         <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
+                            <p class="testimonial-card-subtitle">I loaded this application onto one of my smart fidges and my sales went through the roof!  People Really like these silly filers while they are getting their snacks.</p>
+                            <h6 class="testimonial-card-title">Bob Vance</h6>
                         </div>
                     </div>
                 </div>
@@ -294,7 +295,7 @@
                             <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
                         </div>
                         <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                            <p class="testimonial-card-subtitle">This was such a fun tool to play with! It was soo cool sending this to my friends and family and sending eachother filtered images.</p>
                             <h6 class="testimonial-card-title">Emily Reb</h6>
                         </div>
                     </div>
@@ -307,50 +308,20 @@
     <section class="section" id="blog">
         <!-- container -->
         <div class="container text-center">
-            <p class="section-subtitle">Recent Posts?</p>
-            <h6 class="section-title mb-6">Blog</h6>
+            <h6 class="section-title mb-6">Data and Runtimes</h6>
             <!-- blog-wrapper -->
             <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/img-1.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
                 <div class="blog-card-body">
-                    <h5 class="blog-card-title">Consectetur adipisicing elit</h6>
-
-                    <p class="blog-card-caption">
-                        <a href="#">By: Admin</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                        <a href="#"><i class="ti-comment"></i> 123</a>
-                    </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
-
-                    <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
-                    <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
-
-                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                    <span>
+                        <img src="assets/imgs/3_JS_chart_all.png">
+                    </span>
                 </div>
             </div><!-- end of blog wrapper -->
-
-            <!-- blog-wrapper -->
             <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/img-2.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
                 <div class="blog-card-body">
-                    <h5 class="blog-card-title">Explicabo illo</h6>
-
-                    <p class="blog-card-caption">
-                        <a href="#">By: Admin</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                        <a href="#"><i class="ti-comment"></i> 264</a>
-                    </p>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
-
-                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                    <img src="assets/imgs/5_JS_chart_all.png">
                 </div>
             </div><!-- end of blog wrapper -->
-
         </div><!-- end of container -->
     </section><!-- end of blog section -->
 
