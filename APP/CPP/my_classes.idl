@@ -1,0 +1,10 @@
+interface Conv {
+    void Conv();
+    void setKernal(long size, DOMString name);
+    float applyFilter(long rows, long cols, VoidPtr imgVoid, long channels, float padding, VoidPtr new_imgVoid, long num_threads);
+};
+interface ConvHelper {
+    void ConvHelper();
+    float toFloats(VoidPtr img, unsigned long length, VoidPtr answer);
+    float  fromFloats(VoidPtr img, unsigned long length, VoidPtr answer);
+};
