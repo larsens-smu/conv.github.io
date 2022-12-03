@@ -31,8 +31,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup node
-        working-directory: www/app
         uses: actions/setup-node@v3
+        working-directory: www/app
         with:
           node-version: ${{ matrix.node }}
       - run: npm ci
