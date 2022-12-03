@@ -30,11 +30,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node }}
-          path: www/publc_html/app
       - run: npm ci
       - run: npm test
       - name: Setup Pages
