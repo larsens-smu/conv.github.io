@@ -10,9 +10,27 @@ var filepath = '/Users/stevenlarsen/images'
 var filename = 'image1'
 var constraints = {}
 var firstTime = false;
+
+var encodeArray = function(arr){
+    var b64encoded = btoa(String.fromCharCode.apply(null, arr));
+    return b64encoded
+}
+var decodeArray = function(b64encoded){
+    var u8_2 = new Uint8Array(atob(b64encoded).split("").map(function(c) {
+    return c.charCodeAt(0); }));
+    return u8_2
+}
+
 //once the document is loaded
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Hello World!");
+    if(!window.electronAPI){
+        const input1 = document.getElementById('filename');
+        const input2 = document.getElementById('filepath');
+        input1.remove();
+        input2.remove();
+    }
+    
+
     var kernalSelect = document.getElementById("kernal-select")
     kernalSelect.addEventListener('change',
     function (e) {
@@ -57,7 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         //in the web.
         else{
-
+            var blob = new Blob([decodeArray(base64Data)], {type: "image/png"});
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.setAttribute('href', url);
+            link.setAttribute('download', "image");
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
     })
 });
